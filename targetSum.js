@@ -4,6 +4,7 @@
 
 // Bonus: Can you do this in one pass?
 
+//brute force O(n2)
 const targetSum = (arr = [10, 15, 3, 7], sum = 19) => {
     for (let i = 0; i < arr.length; i++) {
         for (j = 0; j < arr.length; j++) {
@@ -16,6 +17,8 @@ const targetSum = (arr = [10, 15, 3, 7], sum = 19) => {
     return false
 }
 
+
+//O(n)
 const targetSumOnePass = (arr = [10, 15, 3, 7], sum = 17) => {
     const seen = new Set()
     for(item of arr){
